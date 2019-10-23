@@ -1,0 +1,44 @@
+body{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    background: url(../img/slider-image1.jpg) no-repeat center center fixed;
+    background-size : cover;
+    
+    
+}
+
+.container-fluid{
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    width: 100%;
+    background-color: #79b733;
+    border-radius: 0;
+    border: 1px solid #ffffff;
+}
+.navbar-inverse .navbar-nav > .active > a{
+    background-color:  #79b733;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: #ffffff;
+}
+.navbar-nav > li > a{
+    padding-right: 30px;
+}
+
+.connect{
+    color: white;
+    margin-top: 15px;
+    font-size: 1em;
+}
+.navbar-inverse .navbar-nav > .active > a:hover{
+    background-color: #21527e;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color: #21527e;
+}
+

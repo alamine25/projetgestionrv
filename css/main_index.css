@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+
+}
+.content{
+    width: 100%;
+    height: 150px;
+    background-color: #337ab7;
+}
+nav{
+    width: 990px;
+    margin: 0 auto;
+}
+
+.fa-user-cog,.fa-user-nurse,.fa-user-md{
+    font-size: 70px;
+    margin-top: -20px;
+    padding-bottom: 10px;
+    color:  #337ab7;
+}
+
+a{
+    padding: 25px;
+    margin-right: 15px;
+
+    background-color: #fff;
+    float: left;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.1em;
+   
+    width: 260px;
+    height: 70px;
+    color:  #337ab7;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+a:hover{
+   color:  #03115e;
+}
