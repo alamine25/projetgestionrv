@@ -41,7 +41,7 @@
 <div class="container-fluid">
   
   <div class="panel-group col-md-4">
-    <div class="panel panel-primary">
+    <div class="panel panel-success">
       <div class="panel-heading">Modifier un medecin</div>
       <div class="panel-body">
         <?php
