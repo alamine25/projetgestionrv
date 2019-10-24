@@ -16,7 +16,7 @@ if (isset($_POST['submit'])) {
       $_SESSION['id_medecin'] = $infouser['id_medecin'];
       $_SESSION['prenom'] = $infouser['prenom'];
       $_SESSION['nom'] = $infouser['nom'];
-      header('location:profile.php?id='.$_SESSION['id_medecin']);
+      header('location:acceuil.php?id='.$_SESSION['id_medecin']);
     }else{
       $erreur_saisi = "<p class=\"alert alert-danger\"> Adresse email ou mot de passe incorrect! </p>";
     }
