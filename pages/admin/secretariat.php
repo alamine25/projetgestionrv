@@ -11,11 +11,11 @@ if(isset($_POST['submit'])){
   $nom = $_POST['nom'];
   $telephone = $_POST['telephone'];
   $email = $_POST['email'];
-  $mdp = sha1($_POST['passwd']);
+  $password= sha1($_POST['passwd']);
   $service [] = $_POST['service'];
   $req = new ConnexionDB();
   $add = new Requette();
-  if(!empty($prenom) && !empty($nom) && !empty($telephone) && !empty($email) && !empty($mdp) && !empty($service)){
+  if(!empty($prenom) && !empty($nom) && !empty($telephone) && !empty($email) && !empty($password) && !empty($service)){
       if(preg_match('#^(77||78||76||70)[0-9]{7}$#',  $telephone)){
         
           if(filter_var($email, FILTER_VALIDATE_EMAIL)){
@@ -27,7 +27,7 @@ if(isset($_POST['submit'])){
             }else{
               foreach ($service as $value) {
                 $value = intval($value);
-                $donnees = ['prenom'=>$prenom, 'nom'=>$nom, 'telephone'=>$telephone, 'email'=>$email, 'passwd'=>$mdp, 'prenom'=>$prenom,'id_service'=>$value];
+                $donnees = ['prenom'=>$prenom, 'nom'=>$nom, 'telephone'=>$telephone, 'email'=>$email, 'passwd'=>$password, 'prenom'=>$prenom,'id_service'=>$value];
                 $res =  $add->insert($donnees,'secretaire');
                 if($res){
                     header('location:secretariat.php');
@@ -124,7 +124,7 @@ if(isset($_POST['submit'])){
     <div class="panel panel-success">
       <div class="panel-heading">LISTE DES SECRETAIRES</div>
       <div class="panel-body">
-        <!-- la liste des secretaire -->
+        <!-- la liste des secretaires -->
 
         <?php
         $req = new Requette();
