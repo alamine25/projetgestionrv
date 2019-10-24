@@ -81,8 +81,8 @@ session_start();
             <td>".$val['heure_debut']."</td>
             <td>".$val['heure_fin']."</td>";
              echo "
-            <td><a class='btn btn-primary'href='editrv.php?id=".$val['id_rv']."'><em class=\"far fa-edit\"></em></a> 
-                 <a class='btn btn-danger' href='delrv.php?id=".$val['id_rv']."' onclick=\"return confirm('êtes vous sure de vouloir supprimer cet enrégistrement ?')\";><em class=\"fas fa-trash-alt\"></em></a>
+            <td><a class='btn btn-primary'href='modifrv.php?id=".$val['id_rv']."'><em class=\"far fa-edit\"></em></a> 
+                 <a class='btn btn-danger' href='suprv.php?id=".$val['id_rv']."' onclick=\"return confirm('êtes vous sure de vouloir supprimer cet enrégistrement ?')\";><em class=\"fas fa-trash-alt\"></em></a>
              </td>";
          }
          echo "</tbody>";
