@@ -8,14 +8,14 @@ session_start();
     }
     if(isset($_POST['submit'])){
         $dates = $_POST['date'];
-        $hdebut = $_POST['heure_debut'];
-        $hfin = $_POST['heure_fin'];
+        $heure_debut = $_POST['heure_debut'];
+        $heure_fin = $_POST['heure_fin'];
         $secretaire = $_POST['secretaire'];
         $horaire = $_POST['plage_horaire'];
         $medecin = $_POST['medecin'];
         $patient = $_POST['patient'];
-        if(!empty($dates) && !empty($hdebut) && !empty($hfin) && !empty($horaire) && !empty($secretaire)&& !empty($medecin) && !empty($patient)){
-        $donnees = [ 'date'=>$dates,'heure_debut'=>$hdebut,'heure_fin'=>$hfin,'id_secretaire'=>$secretaire,'id_horaire'=>$horaire,'id_medecin'=>$medecin,'id_patient'=>$patient ];
+        if(!empty($dates) && !empty($heure_debut) && !empty($heure_fin) && !empty($horaire) && !empty($secretaire)&& !empty($medecin) && !empty($patient)){
+        $donnees = [ 'date'=>$dates,'heure_debut'=>$heure_debut,'heure_fin'=>$heure_fin,'id_secretaire'=>$secretaire,'id_horaire'=>$horaire,'id_medecin'=>$medecin,'id_patient'=>$patient ];
         $datenow = new DateTime();
         if ($datenow <= DateTime::createFromFormat('Y-m-d', $dates)){
             echo  'ça marche ok';
@@ -52,7 +52,7 @@ session_start();
                     $s = $_SESSION['id_secretaire'];
                 
                 ?>
-            <li><a href='profile.php?id=<?php echo $s ;?>' > PATIENT</a></li>
+            <li><a href='acceuil.php?id=<?php echo $s ;?>' > PATIENT</a></li>
                 <li><a href="">RENDEZ-VOUS</a></li><?php } ?>
             </ul>
             <ul class="nav navbar-nav navbar-right">
