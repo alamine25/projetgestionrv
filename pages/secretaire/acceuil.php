@@ -14,11 +14,11 @@ session_start();
         $age = $_POST['age'];
         $adresse = $_POST['adresse'];
         $secretaire = $_POST['secretaire'];
-        $donnees = ['prenom'=>$prenom,'nom'=>$nom,'age'=>$age,'adresse'=>$adresse,'telephone'=>$telephone,'id_secretaire'=>$secretaire];
+        $data = ['prenom'=>$prenom,'nom'=>$nom,'age'=>$age,'adresse'=>$adresse,'telephone'=>$telephone,'id_secretaire'=>$secretaire];
         if(!empty($prenom) && !empty($nom) && !empty($telephone) && !empty($age)){
            if(is_numeric($age) && $age > 0){
               if(preg_match('#^(77||78||76||70)[0-9]{7}$#', $telephone)){
-                $res = $add->insert($donnees,'patient');
+                $res = $add->insert($data,'patient');
                 if($res){
                     header('locaion:profile.php');
                 }else{
@@ -137,8 +137,8 @@ session_start();
              <td>".$val['adresse']."</td>
              <td>".$val['telephone']."</td>";
              echo "
-             <td><a class='btn btn-success'href='editrv.php?id=".$val['id_patient']."'><em class=\"far fa-edit\"></em></a> 
-                 <a class='btn btn-danger' href='delrv.php?id=".$val['id_patient']."' onclick=\"return confirm('êtes vous sure de vouloir supprimer cet enrégistrement ?')\";><em class=\"fas fa-trash-alt\"></em></a>
+             <td><a class='btn btn-success'href='modifrv.php?id=".$val['id_patient']."'><em class=\"far fa-edit\"></em></a> 
+                 <a class='btn btn-danger' href='suprvrv.php?id=".$val['id_patient']."' onclick=\"return confirm('êtes vous sure de vouloir supprimer cet enrégistrement ?')\";><em class=\"fas fa-trash-alt\"></em></a>
              </td>";
           }
         
