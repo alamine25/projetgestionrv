@@ -8,7 +8,7 @@ session_start();
     }
     if(isset($_POST['submit'])){
     $nom_service =ucfirst( $_POST['service']);
-    $donnees = ['nom_service'=>$nom_service];
+    $data = ['nom_service'=>$nom_service];
     $add = new Requette();
     $req = new ConnexionDB();
     $d = $req->connect()->prepare("SELECT COUNT(*) as nbservices FROM service WHERE nom_service = :nom_service");
@@ -17,7 +17,7 @@ session_start();
       if($email_verify['nbservices'] != 0){
         $errordoublon= "<p class=\"alert alert-danger \" role=\"alert\"> Ce nom de service existe déja. </p>";
     }else{
-      $res =  $add->insert($donnees,'service');
+      $res =  $add->insert($data,'service');
     if($res){
       header('location:services.php');
     }else{
