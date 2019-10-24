@@ -14,9 +14,9 @@ session_start();
         $telephone = $_POST['telephone'];
         $specialite = $_POST['specialite'];
         $email = $_POST['email'];
-        $mdp = sha1($_POST['passwd']);
+        $password = sha1($_POST['passwd']);
         $service [] = $_POST['service'];
-        if(!empty($prenom) && !empty($nom) && !empty($telephone) && !empty($email) && !empty($mdp) && !empty($service) && !empty($specialite)){
+        if(!empty($prenom) && !empty($nom) && !empty($telephone) && !empty($email) && !empty($password) && !empty($service) && !empty($specialite)){
             if(preg_match('#^(77||78||76||70)[0-9]{7}$#',  $telephone)){
                 if(filter_var($email, FILTER_VALIDATE_EMAIL)){
                   $nbemail  = $req->connect()->prepare("SELECT COUNT(*) as nbemail FROM medecin WHERE email = :email");
@@ -27,9 +27,9 @@ session_start();
                   }else{
                     foreach ($service as $value) {
                       $value = intval($value);
-                      $donnees = ['prenom'=>$prenom, 'nom'=>$nom, 'telephone'=>$telephone, 'specialite'=>$specialite,'email'=>$email, 'passwd'=>$mdp, 'prenom'=>$prenom,'id_service'=>$value];
+                      $data = ['prenom'=>$prenom, 'nom'=>$nom, 'telephone'=>$telephone, 'specialite'=>$specialite,'email'=>$email, 'passwd'=>$password, 'prenom'=>$prenom,'id_service'=>$value];
                       $add = new Requette();
-                      $res =  $add->insert($donnees,'medecin');
+                      $res =  $add->insert($data,'medecin');
                       if($res){
                          header('location:medecine.php');
                       }else{

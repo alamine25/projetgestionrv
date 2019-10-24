@@ -24,7 +24,7 @@ session_start();
 
 <body>
 
-  <!-- Navigation -->
+  <!-- Bar de Navigation -->
   <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
