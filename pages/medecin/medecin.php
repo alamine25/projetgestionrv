@@ -6,7 +6,7 @@ require_once '../classes/Formulaire.php';
 if (isset($_POST['submit'])) {
   if(!empty($_POST['email']) && !empty($_POST['passwd'])){
     $email=$_POST['email'];
-    $mdp=sha1($_POST['passwd']);
+    $password=sha1($_POST['passwd']);
     $req = new ConnexionDB();
     $res = $req->connect()->prepare("SELECT * FROM medecin WHERE email= :email AND passwd= :passwd");
     $res->execute(array('email'=>$email,'passwd'=>$mdp));
