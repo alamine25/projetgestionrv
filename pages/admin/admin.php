@@ -9,7 +9,7 @@ require_once '../classes/Formulaire.php';
     }else{
       $email = $_POST['email'];
       $mdp = $_POST['mdp'];
-      if($email == 'admin@gmail.com' && $mdp == 'admin123') {
+      if($email == 'alamine25@gmail.com' && $mdp == 'alamine123') {
         $_SESSION['email'] = $email;
         header('location:homeadmin.php');
       }else{
