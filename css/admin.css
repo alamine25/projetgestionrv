@@ -16,22 +16,23 @@ body{
 }
 .navbar {
     width: 100%;
-    background-color: #79b733;
+    background-color:#177299;
     border-radius: 0;
     border: 1px solid #ffffff;
 }
 .navbar-inverse .navbar-nav > .active > a{
     background-color:  #79b733;
+    color: #f5d76e;
 }
 .navbar-inverse .navbar-nav > li > a{
-    color: #ffffff;
+    color: #f5d76e;
 }
 .navbar-nav > li > a{
     padding-right: 30px;
 }
 
 .connect{
-    color: white;
+    color: #f5d76e;
     margin-top: 15px;
     font-size: 1em;
 }

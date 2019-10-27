@@ -2,7 +2,9 @@
     margin: 0;
     padding: 0;
     font-family: 'Quicksand', sans-serif;
+  
 }
+
 
 .sidebar {
     width: 230px;
@@ -74,78 +76,25 @@
 
 /* Sidebar Ends */
 
-.container h1 {
-    font-size: 54px;
-    padding-left: 15%;
-}
-
-.notification>button {
-    color: rgb(247, 247, 247);
-    background-color: rgb(23, 115, 155);
-    border-radius: 15px;
-    border: none;
-    position: absolute;
-    top: 5%;
-    left: 90%;
-}
-
-.notification>button :hover {
-    color: #7a7a7a;
-}
-
-
-/* Active/current link */
-
-
-/* Table */
-
-table {
-    max-width: 70%;
-    border-collapse: separate;
-    position: absolute;
-    left: 20%;
-    top: 20%;
-}
-
-th,
-td {
-    margin: 5px;
-    text-align: left;
-    font-size: 12px;
-}
-
-tr {
-    padding: 5px;
-    background-color: rgb(255, 255, 255);
+.card {
     box-shadow: 0 5px 8px 0 rgba(134, 134, 134, 0.116), 0 9px 26px 0 rgba(82, 81, 81, 0.13);
 }
 
-.btn-sm {
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    border: 5px solid rgb(255, 255, 255);
-    border-radius: 20%;
+.row {
+    display: flex;
 }
 
-
-/* Button ajouter Rv */
-
-.buttonrv {
-    position: absolute;
-    left: 75%;
-    top: 8%;
+.row>div {
+    margin: 10px;
+    position: relative;
+    left: 20%;
+    top: 10%;
 }
-
-.buttonrv button {
-    background-color: rgb(23, 115, 155);
-    border-radius: 20px;
-    ;
+.container h1 {
+    font-size: 4vw;
+    padding-left: 20%;
+    color: #f5d76e;
 }
-
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 

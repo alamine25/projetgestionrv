@@ -66,13 +66,13 @@ session_start();
   <title>MEDECINE</title>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" aria-label="">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="homeadmin.php">ACCUEIL</a></li>
-                <li><a href="secretariat.php">SECRETARIAT</a></li>
-                <li><a href="medecine.php">MEDECINE</a></li>
-                <li><a href="services.php">SERVICES</a></li>
+                <li class="active"><a href="homeadmin.php">SEN-MEDIC</a></li>
+                <li><a href="secretariat.php">COMPTE SECRETAIRE</a></li>
+                <li><a href="medecine.php">COMPTE MEDECIN</a></li>
+                <li><a href="services.php">COMPTE SERVICES</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
               <li class="connect"><?php if(isset( $session)){echo $session;}?></li>
