@@ -70,9 +70,9 @@ session_start();
             <div class="container-fluid">
               <ul class="nav navbar-nav">
                 <li class="active"><a href="homeadmin.php">SEN-MEDIC</a></li>
-                <li><a href="secretariat.php">COMPTE SECRETAIRE</a></li>
-                <li><a href="medecine.php">COMPTE MEDECIN</a></li>
-                <li><a href="services.php">COMPTE SERVICES</a></li>
+                <li><a href="secretariat.php">ESPACE SECRETAIRE</a></li>
+                <li><a href="medecine.php">ESPACE MEDECIN</a></li>
+                <li><a href="services.php">ESPACE SERVICES</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
               <li class="connect"><?php if(isset( $session)){echo $session;}?></li>
@@ -133,7 +133,7 @@ session_start();
          <table class=\"table\" >
          <thead class='thead-dark'>
            <tr>
-             <th scope=\"col\">#</th>
+             <th scope=\"col\">Id_Medecin</th>
              <th scope=\"col\">Prenom</th>
              <th scope=\"col\">Nom</th>
              <th scope=\"col\">telephone</th>

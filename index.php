@@ -18,24 +18,22 @@
 
 <body>
     <!-- The sidebar -->
-    <div class="sidebar">
-        <span class="avatar">
-                <img src="img/bitmap.png" alt="" style="width:5rem ">
-                <h4>SEN MEDIC</h4>
-                <h5></h5>
-        </span>
-
-        <a href="#Home"><em class="fa fa-home" style="font-size:16px"></em>Home</a>
-        <a href="pages/admin/admin.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Administrateur</a>
-        <a href="pages/secretaire/secretaire.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Secretaire</a>
-        <a href="pages/medecin/medecin.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Medecin</a>
-    </div>
+    <nav class="navbar navbar-inverse" aria-label="">
+            <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                <li> <a href="#Home"><em class="fa fa-home" style="font-size:16px"></em>Home</a></li>
+                <li> <a href="pages/admin/admin.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Administrateur</a></li>
+                <li> <a href="pages/secretaire/secretaire.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Secretaire</a></li>
+                <li><a href="pages/medecin/medecin.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Medecin</a></li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="homeadmin.php">SEN-MEDIC</a></li>
+             </ul>
+            </div>
+          </nav>
      <!-- The sidebar end -->
      <div class="container">
         <h1>Bienvenue A SEN-MEDIC</h1>
-        <div class="notification">
-            <a href=""> <i class="fas fa-bell"></i></a>
-        </div>
         <!-- card -->
         <div class="row">
             <div class="card" style="width: 15rem ">
