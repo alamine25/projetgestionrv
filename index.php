@@ -27,7 +27,7 @@
                 <li><a href="pages/medecin/medecin.php"><em class='far fa-calendar-alt' style='font-size:16px'></em> Compte Medecin</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li class="active"><a href="homeadmin.php">SEN-MEDIC</a></li>
+                <img src="img/bitmap.png" alt="" style="width:5rem ">
              </ul>
             </div>
           </nav>
