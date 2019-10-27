@@ -20,7 +20,7 @@
 
 .sidebar a {
     display: block;
-    color: rgb(226, 224, 224);
+    color:white;
     text-decoration: none;
     font-size: 15px;
     margin: 10px;
@@ -35,7 +35,7 @@
 }
 .sidebar :hover {
     text-decoration: none;
-    color: black;
+    color: #21527e;
 }
 
 .ref{
@@ -56,6 +56,7 @@
     font-size: 15px;
     margin-top: 5px;
     font-weight: bold;
+    
 }
 
 .avatar>h5 {
@@ -93,7 +94,7 @@
 .container h1 {
     font-size: 4vw;
     padding-left: 20%;
-    color: #f5d76e;
+
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
