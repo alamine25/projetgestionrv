@@ -53,6 +53,7 @@ session_start();
 <nav class="navbar navbar-inverse">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
+              <li class="active"><a href="">SEN-MEDIC</a></li>
                 <li><a href="">PATIENT</a></li>
                 <?php
                     if(isset($_SESSION['id_secretaire'])){

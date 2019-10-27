@@ -1,5 +1,12 @@
-body{
-    background-image: url(../img/image45.jpg);
+html{
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 255, 255);
+    background: url(../img/image45.jpg) no-repeat center center fixed;
+    background-size : cover;
+    
 }
 
 .navbar {
