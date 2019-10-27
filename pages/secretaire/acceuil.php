@@ -20,7 +20,7 @@ session_start();
               if(preg_match('#^(77||78||76||70)[0-9]{7}$#', $telephone)){
                 $res = $add->insert($data,'patient');
                 if($res){
-                    header('locaion:profile.php');
+                    header('locaion:acceuil.php');
                 }else{
                     echo 'ca ne marche pas';
                 }

@@ -8,17 +8,17 @@ session_start();
     }
     if(isset($_POST['submit'])){
         $dates = $_POST['date'];
-        $heure_debut = $_POST['heure_debut'];
-        $heure_fin = $_POST['heure_fin'];
-        $secretaire = $_POST['secretaire'];
+        $hdebut = $_POST['heure_debut'];
+        $hfin = $_POST['heure_fin'];
         $horaire = $_POST['plage_horaire'];
+        $secretaire = $_POST['secretaire'];
         $medecin = $_POST['medecin'];
         $patient = $_POST['patient'];
-        if(!empty($dates) && !empty($heure_debut) && !empty($heure_fin) && !empty($horaire) && !empty($secretaire)&& !empty($medecin) && !empty($patient)){
-        $donnees = [ 'date'=>$dates,'heure_debut'=>$heure_debut,'heure_fin'=>$heure_fin,'id_secretaire'=>$secretaire,'id_horaire'=>$horaire,'id_medecin'=>$medecin,'id_patient'=>$patient ];
+        if(!empty($dates) && !empty($hdebut) && !empty($hfin) && !empty($horaire) && !empty($secretaire)&& !empty($medecin) && !empty($patient)){
+        $data = [ 'date'=>$dates,'heure_debut'=>$hdebut,'heure_fin'=>$hfin,'id_secretaire'=>$secretaire,'id_horaire'=>$horaire,'id_medecin'=>$medecin,'id_patient'=>$patient ];
         $datenow = new DateTime();
         if ($datenow <= DateTime::createFromFormat('Y-m-d', $dates)){
-            echo  'ça marche ok';
+           echo 'cool';
         }
         else{
             $error_date = "<p class=\"alert alert-danger \" role=\"alert\"> La date est passée. </p>";
@@ -26,6 +26,7 @@ session_start();
         }else{
             $error_champ = "<p class=\"alert alert-danger \" role=\"alert\"> Tous les champs doivent être remplis. </p>";
         }
+    
     }
       
     
@@ -61,7 +62,7 @@ session_start();
             </ul>
         </div>
         </nav>
-        <div class="container-fluid">
+ <div class="container-fluid">
   
   <div class="panel-group col-md-2">
     <div class="panel panel-success">
@@ -90,7 +91,7 @@ session_start();
                 }else{
                     echo "<p class=\"alert alert-danger \" role=\"alert\"> La table est vide. </p>";
                 }
-                echo $forms->selectList('Choisissez une horaire','horaire',$liste_option);
+                echo $forms->selectList('Choisissez une horaire','plage_horaire',$liste_option);
 
                 if(isset($_SESSION['id_service'])){
                     $id_service = $_SESSION['id_service'];
@@ -125,6 +126,14 @@ session_start();
         </div>
     </div>
     <div class="panel-group col-md-10">
+
+        <div class="panel panel-primary">
+            <div class="panel-heading">RECHERCHE</div>
+            <div class="panel-body">
+                contenu
+            </div>
+        </div>
+
     <div class="panel panel-success">
       <div class="panel-heading">LES RENDEZ-VOUS</div>
       <div class="panel-body">
