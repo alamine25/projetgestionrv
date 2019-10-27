@@ -130,7 +130,13 @@ session_start();
         <div class="panel panel-primary">
             <div class="panel-heading">RECHERCHE</div>
             <div class="panel-body">
-                contenu
+               <form action="" method="get" class="form-inline">
+                    <div class="form-group">
+                        <input type="text" name="nom" placeholder="saisir un nom" class="form-control">
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search"></span> Rechercher</button>
+               </form>
             </div>
         </div>
 
