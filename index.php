@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <!-- The sidebar -->
+    <!-- bar de navigation -->
     <nav class="navbar navbar-inverse" aria-label="">
             <div class="container-fluid">
               <ul class="nav navbar-nav">
@@ -31,33 +31,8 @@
              </ul>
             </div>
           </nav>
-     <!-- The sidebar end -->
-     <div class="container">
-        <h1>Bienvenue A SEN-MEDIC</h1>
-        <!-- card -->
-        <div class="row">
-            <div class="card" style="width: 15rem ">
-                <img src="img/image56.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 15rem ">
-                <img src="img/image45.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-            <div class="card" style="width: 15rem ">
-                <img src="img/image56.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+    
+    
 </body>
 
 </html>

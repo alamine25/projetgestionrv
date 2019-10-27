@@ -1,3 +1,7 @@
+body{
+    background-image: url(../img/image45.jpg);
+}
+
 .navbar {
     width: 100%;
     background-color: #177299;
@@ -14,43 +18,12 @@
 .navbar-nav > li > a{
     padding-right: 30px;
 }
-.connect{
-    color: #f5d76e;
-    margin-top: 15px;
-    font-size: 1em;
-}
 
 .navbar-inverse .navbar-nav > .active > a:hover{
     background-color: #21527e;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
     background-color: #21527e;
-}
-table th ,td{
-    text-align: center; 
- }
-
-
-/* Sidebar Ends */
-
-.card {
-    box-shadow: 0 5px 8px 0 rgba(134, 134, 134, 0.116), 0 9px 26px 0 rgba(82, 81, 81, 0.13);
-}
-
-.row {
-    display: flex;
-}
-
-.row>div {
-    margin: 10px;
-    position: relative;
-    left: 20%;
-    top: 10%;
-}
-.container h1 {
-    font-size: 4vw;
-    padding-left: 20%;
-
 }
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
