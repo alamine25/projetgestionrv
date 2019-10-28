@@ -30,7 +30,13 @@
                 <img src="img/bitmap.png" alt="" style="width:5rem ">
              </ul>
             </div>
-          </nav>
+    </nav>
+    <div class="slider">
+      <div class="slides">
+        <div class="slide"><img src="img/image45.jpg" alt=""></div>
+        <div class="slide"><img src="img/image56.jpg" alt=""></div>
+      </div>
+    </div>
     
     
 </body>

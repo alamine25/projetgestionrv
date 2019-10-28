@@ -4,7 +4,6 @@ html{
     padding: 0;
     margin: 0;
     background-color: rgb(255, 255, 255);
-    background: url(../img/image45.jpg) no-repeat center center fixed;
     background-size : cover;
     
 }
@@ -66,6 +65,35 @@ header h1{
 
 h1{
     font-size: 15px;
+}
+
+/*slider*/
+
+.slider{
+    width: 1000px;
+    overflow: hidden;
+    margin: 100px auto;
+}
+
+.slides{
+    width: calc(1000px * 2);
+    animation: glisse 10s infinite;
+}
+
+.slide{
+    float: left;
+}
+
+@keyframes glisse{
+    0%{
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(0);
+    }
 }
 
 
