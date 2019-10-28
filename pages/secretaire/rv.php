@@ -53,6 +53,7 @@ session_start();
                     $s = $_SESSION['id_secretaire'];
                 
                 ?>
+                 <li class="active"><a href="homeadmin.php">SEN-MEDIC</a></li>
             <li><a href='acceuil.php?id=<?php echo $s ;?>' > PATIENT</a></li>
                 <li><a href="">RENDEZ-VOUS</a></li><?php } ?>
             </ul>
