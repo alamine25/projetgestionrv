@@ -63,7 +63,7 @@ session_start();
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <link rel="stylesheet" href="../../css/menu.css">
-  <title>MEDECINE</title>
+  <title>ESPACE MEDECIN</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse" aria-label="">
