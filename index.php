@@ -31,14 +31,28 @@
              </ul>
             </div>
     </nav>
-    <div class="slider">
+
+    <!-- slider-->
+    
+    <div class="slidershow middle">
       <div class="slides">
-        <div class="slide"><img src="img/image45.jpg" alt=""></div>
-        <div class="slide"><img src="img/image56.jpg" alt=""></div>
+         <input type="radio" name="r" id="r1" checked>
+         <input type="radio" name="r" id="r2">
+        <div class="slide s1">
+            <img src="img/image45.jpg" alt="">
+            <img src="img/who.jpg" alt="">
+        </div>
+      </div>
+      <div class="navigation">
+        <label for="r1" class="bar"></label>
+        <label for="r2" class="bar"></label> 
       </div>
     </div>
-    
-    
+
+    <!-- en bas de la page -->
+    <div class="message">
+        <h1>Bienvenu a Sen-Medic</h1>
+    </div> 
 </body>
 
 </html>
