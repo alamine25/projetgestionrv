@@ -61,7 +61,7 @@ if(isset($_POST['submit'])){
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
   <link rel="stylesheet" href="../../css/menu.css">
   <link rel="stylesheet" href="../../js/app.js">
-  <title>SECRETARIAT</title>
+  <title>ESPACE SECRETAIRE</title>
 </head>
 <body>
 <nav class="navbar navbar-inverse" aria-label="">
